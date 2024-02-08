@@ -17,3 +17,16 @@ var damage = randomNumber(playerAttack - 3, playerAttack);
 console.log(damage); //10 7 7
 enemyHealth = Math.max(0, enemyHealth - damage);
 console.log(enemyHealth);//38 47 48
+
+var playerInfo = {
+  name: window.prompt("What is your robot's name?"),
+  health: 100,
+  attack: 10,
+  money: 10,
+  reset: function() {
+    this.health = 100;
+    this.money = 10;
+    this.attack = 10;
+  }
+}
+console.log(playerInfo);
